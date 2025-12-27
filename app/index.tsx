@@ -1,4 +1,4 @@
-// app/index.tsx
+
 import React, { useState } from 'react';
 import { View, StyleSheet, Alert, KeyboardAvoidingView, Platform } from 'react-native';
 import { Text, TextInput, Button, Surface } from 'react-native-paper';
@@ -24,7 +24,7 @@ export default function LoginScreen() {
         setIsRegistering(false);
       } else {
         await signIn(email, password);
-        // Router replace para evitar volver atrás
+       
         router.replace('/(tabs)/home');
       }
     } catch (error: any) {
